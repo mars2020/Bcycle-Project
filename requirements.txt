@@ -1,0 +1,7 @@
+coverage
+flask
+requests
+numpy
+pandas
+matplotlib
+
