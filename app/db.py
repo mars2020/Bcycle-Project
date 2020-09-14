@@ -1,3 +1,4 @@
+from databaseconfig import MYSQL
 import mysql.connector
 from mysql.connector import Error
 
@@ -33,7 +34,7 @@ def create_database(connection, query):
         print(f"The error '{e}' occurred")
 
 
-connection = create_connection("localhost","root","N33dAj0b!","mysql_db")
+connection = create_connection(MYSQL["host"],MYSQL["user"],MYSQL["password"],MYSQL["db"])
 create_database_query = 'CREATE DATABASE mysql_db'
 create_database(connection,create_database_query)
 
