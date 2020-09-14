@@ -4,4 +4,4 @@ requests
 numpy
 pandas
 matplotlib
-
+mysql-connector-python

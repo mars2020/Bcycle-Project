@@ -2,6 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-import app.controller
-import app.model
-import app.view
+from app import db
+from app import controller
+from app import views
+from app import model
