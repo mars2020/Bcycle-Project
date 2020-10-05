@@ -1,6 +1,8 @@
 from app import app
 from flask import render_template, request
 from .db import mysql
+import geocoder
+import pandas as pd
 
 @app.route("/", methods=["GET","POST"])
 def main():
@@ -26,6 +28,9 @@ def plots():
     conn = mysql.connect()
     cursor = conn.cursor()
     if request.method == "POST":
-        print("post")
+        # 1. retrieve data based on input dates
+        # 2. run geocoding algorithm on data
+        # 3. add data to render_template for heatmap
+        print("still under development")
     else:
         return render_template("home.html")
