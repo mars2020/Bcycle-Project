@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(185, 98, 98);
+}
+
+.backdrop {
+    background-color: rgb(97, 141, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-trip-duration button{
+    color: blue;
+}

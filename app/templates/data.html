@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/data.css') }}">
+    <title>B-Cycle Data Post</title>
+</head>
+<body>
+    <div class="table-title">
+        <h3>Trips with less than {{ duration }} minutes</h3>
+    </div>
+    <table class="table-fill">
+        <thead>
+            <tr>
+                <th class="text-left">Kiosk Id</th>
+                <th class="text-left">Duration</th>
+            </tr>
+        </thead>
+        <tbody class="table-hover">
+            {% for items in data %}
+            <tr>
+                <td class="text-left">{{items[0]}}</td>
+                <td class="text-left">{{items[1]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

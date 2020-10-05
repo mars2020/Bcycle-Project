@@ -1,0 +1,55 @@
+/*
+
+#header1 {
+  border: 5px solid orange;
+}
+
+#date-form {
+  border: 5px solid blue;
+}
+
+#form-container {
+  border: 5px solid purple;
+}
+*/
+
+#map-container {
+    height: 500px;
+    width: 70%;
+    margin: auto;
+    /*border: 5px solid black;*/
+  }
+  
+  /* Always set the map height explicitly to define the size of the div
+  * element that contains the map. */
+  #map {
+    height: 100%;
+    border: 2px solid black;
+  }
+        
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    /*border: 5px solid red;*/
+    text-align: center;
+  }
+  
+  /* Remove the navbar's default margin-bottom and rounded borders */ 
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: black;
+  }
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {height: 100px}
+  
+  .box {
+    padding: 0 50px 0 50px;
+  }
+  
