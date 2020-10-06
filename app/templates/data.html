@@ -8,20 +8,22 @@
 </head>
 <body>
     <div class="table-title">
-        <h3>Trips with less than {{ duration }} minutes</h3>
+        <h3>Query Data</h3>
     </div>
     <table class="table-fill">
         <thead>
             <tr>
-                <th class="text-left">Kiosk Id</th>
-                <th class="text-left">Duration</th>
+                {% for col in col_values %}
+                <th class="text-left">{{col}}</th>
+                {% endfor %}
             </tr>
         </thead>
         <tbody class="table-hover">
             {% for items in data %}
             <tr>
-                <td class="text-left">{{items[0]}}</td>
-                <td class="text-left">{{items[1]}}</td>
+                {% for col in items %}
+                <td class="text-left">{{ col }}</td>
+                {% endfor %}
             </tr>
             {% endfor %}
         </tbody>
