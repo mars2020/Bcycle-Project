@@ -4,3 +4,4 @@ env/
 .vscode/
 *config.py
 .env
+secrets.py
